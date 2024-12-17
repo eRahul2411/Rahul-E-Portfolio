@@ -4,79 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul E - Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gradient-to-br from-blue-50 to-purple-100 text-gray-900 font-sans">
     <!-- Header -->
-    <header class="bg-blue-800 text-white p-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">Rahul E</h1>
-            <p class="text-lg">MERN Stack Developer | MCA Graduate</p>
-            <p class="text-sm mt-2">Malappuram, Kerala, India | <a href="mailto:esrahul2000@gmail.com" class="underline">esrahul2000@gmail.com</a> | +91 8891498655</p>
-            <a href="https://linkedin.com/in/rahule24" class="text-yellow-400 underline" target="_blank">LinkedIn Profile</a>
+    <header class="bg-gradient-to-r from-blue-700 to-purple-700 text-white p-8 shadow-lg">
+        <div class="container mx-auto text-center animate-fadeIn">
+            <h1 class="text-5xl font-extrabold mb-2 drop-shadow-lg">Rahul E</h1>
+            <p class="text-lg font-light">MERN Stack Developer | MCA Graduate</p>
+            <div class="mt-4">
+                <p class="inline-block mr-4">Malappuram, Kerala, India</p>
+                <a href="mailto:esrahul2000@gmail.com" class="underline">esrahul2000@gmail.com</a>
+                <p class="inline-block ml-4">+91 8891498655</p>
+            </div>
+            <a href="https://linkedin.com/in/rahule24" class="mt-4 inline-block bg-yellow-400 text-black font-semibold px-4 py-2 rounded shadow hover:bg-yellow-500 transition duration-300">LinkedIn Profile</a>
         </div>
     </header>
 
     <!-- Summary -->
-    <section class="container mx-auto mt-8 p-6 bg-white shadow-md">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Summary</h2>
-        <p class="text-gray-700">Motivated and results-driven MCA graduate with a B.Sc. in Computer Science, seeking a challenging role in software development. Passionate about building innovative web applications and dedicated to continuous learning and adaptation to emerging technologies. Skilled in MERN stack development with hands-on project experience.</p>
+    <section class="container mx-auto mt-8 p-8 bg-white rounded-lg shadow-lg animate-fadeIn">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-600">Summary</h2>
+        <p class="text-gray-700 leading-relaxed">Motivated and results-driven MCA graduate with a B.Sc. in Computer Science, seeking a challenging role in software development. Passionate about building innovative web applications and dedicated to continuous learning and adaptation to emerging technologies. Skilled in MERN stack development with hands-on project experience.</p>
     </section>
 
     <!-- Education -->
-    <section class="container mx-auto mt-8 p-6 bg-white shadow-md">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
-        <ul class="list-disc ml-8 text-gray-700">
-            <li><strong>Master of Computer Applications</strong> - University of Calicut, CCSIT Calicut University Campus (2023) - <em>68.90%</em></li>
-            <li><strong>B.Sc. Computer Science</strong> - University of Calicut, LBS Model Degree College, Parappanangadi (2021) - <em>64.00%</em></li>
-            <li><strong>Plus Two - Computer Science</strong> - Kerala State Board, DGHSS Tanur (2018) - <em>77.00%</em></li>
-            <li><strong>SSLC</strong> - Kerala State Board, MVHSS Ariyallur (2016) - <em>93.00%</em></li>
+    <section class="container mx-auto mt-8 p-8 bg-blue-50 rounded-lg shadow-lg animate-fadeIn">
+        <h2 class="text-3xl font-semibold mb-4 text-purple-600">Education</h2>
+        <ul class="space-y-4">
+            <li class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>Master of Computer Applications</strong> - University of Calicut, CCSIT Calicut University Campus (2023) - <em>68.90%</em>
+            </li>
+            <li class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>B.Sc. Computer Science</strong> - University of Calicut, LBS Model Degree College (2021) - <em>64.00%</em>
+            </li>
+            <li class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>Plus Two - Computer Science</strong> - Kerala State Board, DGHSS Tanur (2018) - <em>77.00%</em>
+            </li>
+            <li class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>SSLC</strong> - Kerala State Board, MVHSS Ariyallur (2016) - <em>93.00%</em>
+            </li>
         </ul>
     </section>
 
     <!-- Skills -->
-    <section class="container mx-auto mt-8 p-6 bg-white shadow-md">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Technical Skills</h2>
-        <ul class="list-disc ml-8 text-gray-700">
-            <li><strong>Programming Languages:</strong> JavaScript, Python</li>
-            <li><strong>Web Technologies:</strong> HTML, CSS, Tailwind CSS</li>
-            <li><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js</li>
-            <li><strong>Databases:</strong> MongoDB, MySQL</li>
-        </ul>
+    <section class="container mx-auto mt-8 p-8 bg-purple-50 rounded-lg shadow-lg animate-fadeIn">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-600">Technical Skills</h2>
+        <div class="grid grid-cols-2 gap-4 text-gray-700">
+            <div class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>Programming Languages:</strong> JavaScript, Python
+            </div>
+            <div class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>Web Technologies:</strong> HTML, CSS, Tailwind CSS
+            </div>
+            <div class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js
+            </div>
+            <div class="p-4 bg-white rounded shadow hover:shadow-md transition duration-300">
+                <strong>Databases:</strong> MongoDB, MySQL
+            </div>
+        </div>
     </section>
 
     <!-- Projects -->
-    <section class="container mx-auto mt-8 p-6 bg-white shadow-md">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Academic Projects</h2>
-        <div class="space-y-4">
-            <div>
-                <h3 class="text-xl font-semibold">Share Ride Mobile Application</h3>
+    <section class="container mx-auto mt-8 p-8 bg-white rounded-lg shadow-lg animate-fadeIn">
+        <h2 class="text-3xl font-semibold mb-4 text-purple-600">Academic Projects</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-2xl font-semibold mb-2 text-blue-700">Share Ride Mobile Application</h3>
                 <p class="text-gray-700"><strong>Technologies:</strong> Flutter Dart (Frontend), Node.js & Express.js (Backend), MongoDB (Database)</p>
-                <p class="text-gray-700">A carpooling and vehicle rental platform with features for driver hiring. Includes three modules: User, Driver, and Admin.</p>
+                <p>A carpooling and vehicle rental platform with features for driver hiring.</p>
             </div>
-            <div>
-                <h3 class="text-xl font-semibold">Campus Bicycle Management System</h3>
+            <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-2xl font-semibold mb-2 text-blue-700">Campus Bicycle Management System</h3>
                 <p class="text-gray-700"><strong>Technologies:</strong> React.js (Frontend), Node.js (Backend), MongoDB (Database)</p>
-                <p class="text-gray-700">A bicycle booking and management system with pickup and drop services. Includes two modules: User and Admin.</p>
+                <p>A bicycle booking and management system with pickup and drop services.</p>
             </div>
-            <div>
-                <h3 class="text-xl font-semibold">Soulmate Matrimonial Website</h3>
-                <p class="text-gray-700"><strong>Technologies:</strong> HTML, CSS, JavaScript (Frontend), PHP (Backend), MySQL (Database)</p>
-                <p class="text-gray-700">A matrimonial platform enabling bride/groom search, auditorium booking, and photography services. Includes User and Admin modules.</p>
+            <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition duration-300">
+                <h3 class="text-2xl font-semibold mb-2 text-blue-700">Soulmate Matrimonial Website</h3>
+                <p class="text-gray-700"><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                <p>A matrimonial platform with bride/groom search and booking services.</p>
             </div>
         </div>
     </section>
 
     <!-- Certifications -->
-    <section class="container mx-auto mt-8 p-6 bg-white shadow-md">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Courses & Certifications</h2>
+    <section class="container mx-auto mt-8 p-8 bg-blue-50 rounded-lg shadow-lg animate-fadeIn">
+        <h2 class="text-3xl font-semibold mb-4 text-purple-600">Courses & Certifications</h2>
         <ul class="list-disc ml-8 text-gray-700">
             <li><strong>Web Development - MERN Stack Course</strong> - Tutedude (Issued Feb 2024) - Credential ID: TD-AKFA3288</li>
         </ul>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-800 text-white p-4 mt-8 text-center">
+    <footer class="bg-gradient-to-r from-blue-700 to-purple-700 text-white p-6 mt-8 text-center animate-fadeIn">
         <p>&copy; 2024 Rahul E | MERN Stack Developer</p>
     </footer>
 </body>
